@@ -5,7 +5,7 @@ svg{
 }
 rect{
   fill: #ec8989;
-  stroke: rgb(0, 0, 0);
+  stroke: rgb(255, 255, 255);
   stroke-width: 2px;
   transition: all 300ms;
 }
