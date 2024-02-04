@@ -1,11 +1,11 @@
 svg{
-  background-color: orangered;
+  background-color: rgb(213, 236, 246);
   height: 100%;
   width: 100%;
 }
 rect{
-  fill: #004494;
-  stroke: white;
+  fill: #ec8989;
+  stroke: rgb(0, 0, 0);
   stroke-width: 2px;
   transition: all 300ms;
 }
