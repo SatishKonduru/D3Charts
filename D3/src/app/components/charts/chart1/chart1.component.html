@@ -1,0 +1,19 @@
+<!-- <svg>
+  <rect x="0" y="125" width="50" height="125"></rect>
+  <rect x="50" y="150" width="50" height="100"></rect>
+  <rect x="100" y="200" width="50" height="50"></rect>
+  <rect x="150" y="175" width="50" height="75"></rect>
+  <rect x="200" y="50" width="50" height="200"></rect>
+</svg> -->
+<svg>
+  @for(item of data; track item; let idx = $index){
+    <rect
+          [attr.x]="idx * rectWidth"
+          [attr.y]="dimensions.height- (dimensions.height / max) * item"
+          [attr.width]="rectWidth"
+          [attr.height]="(dimensions.height / max) * item">
+    </rect>
+  }@empty {
+   No Data Found
+  }
+</svg>
