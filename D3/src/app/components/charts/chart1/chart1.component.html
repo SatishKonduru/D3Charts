@@ -8,10 +8,10 @@
 <svg>
   @for(item of data; track item; let idx = $index){
     <rect
-          [attr.x]="idx * rectWidth"
-          [attr.y]="dimensions.height- (dimensions.height / max) * item"
-          [attr.width]="rectWidth"
-          [attr.height]="(dimensions.height / max) * item">
+          [attr.x]="idx * rectWidth + 0.5 * padding + outerPadding"
+          [attr.y]="innerHeight - (innerHeight / max) * item"
+          [attr.width]="bandWidth"
+          [attr.height]="(innerHeight / max) * item">
     </rect>
   }@empty {
    No Data Found
